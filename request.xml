@@ -1,9 +1,9 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-				  xmlns:gs="http://my.domain.com/basic-soap-webservice">
+				  xmlns:gs="http://webservices.template.soap.com">
 	<soapenv:Header/>
 	<soapenv:Body>
-		<gs:echo>
-			<gs:message>sdafasdf</gs:message>
-		</gs:echo>
+		<acc:AccountDetailsRequest>
+			<acc:accountNumber>12345</acc:accountNumber>
+		</acc:AccountDetailsRequest>
 	</soapenv:Body>
 </soapenv:Envelope>
