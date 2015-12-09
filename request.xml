@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+				  xmlns:gs="http://my.domain.com/basic-soap-webservice">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<gs:echo>
+			<gs:message>sdafasdf</gs:message>
+		</gs:echo>
+	</soapenv:Body>
+</soapenv:Envelope>
