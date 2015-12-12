@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://com/soap/template/webservices/basicservice" xmlns:bs="http://webservices.template.soap.com"
+	targetNamespace="http://com/soap/template/webservices/basicservice"
+	elementFormDefault="qualified">
+
+	<xsd:import namespace="http://webservices.template.soap.com"
+		schemaLocation="BasicDetails.xsd" />
+	<xsd:element name="NewRequest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="content" type="xsd:string" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="NewResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Basic" type="bs:Basic" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="EchoRequest">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:pattern value="([A-Z]|[a-z])+"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+	<xsd:element name="EchoResponse" type="xsd:string" />
+</xsd:schema>  

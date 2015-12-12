@@ -25,11 +25,6 @@ public class SoapTemplateApplication extends SpringBootServletInitializer {
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(SoapTemplateApplication.class);
     }
-	
-	@Bean
-    public RestTemplate restTemplate() {
-    	return new RestTemplate();
-    }
 
     public static void main(String[] args) {
     	ApplicationContext ctx = SpringApplication.run(SoapTemplateApplication.class, args);  

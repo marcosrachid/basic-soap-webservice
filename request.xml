@@ -1,9 +1,7 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-				  xmlns:gs="http://webservices.template.soap.com">
-	<soapenv:Header/>
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gs="http://com/soap/template/webservices/basicservice">
+	<soapenv:Header />
 	<soapenv:Body>
-		<acc:AccountDetailsRequest>
-			<acc:accountNumber>12345</acc:accountNumber>
-		</acc:AccountDetailsRequest>
+		<gs:EchoRequest>ionadsfouiafnds</gs:EchoRequest>
 	</soapenv:Body>
 </soapenv:Envelope>

@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.7 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2015.12.09 às 02:27:51 AM BRST 
+// Gerado em: 2015.12.12 às 06:33:26 PM BRST 
 //
 
 
@@ -31,7 +31,7 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Account_QNAME = new QName("http://webservices.template.soap.com", "Account");
+    private final static QName _Basic_QNAME = new QName("http://webservices.template.soap.com", "Basic");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.soap.template.webservices
@@ -41,20 +41,20 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Account }
+     * Create an instance of {@link Basic }
      * 
      */
-    public Account createAccount() {
-        return new Account();
+    public Basic createBasic() {
+        return new Basic();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Account }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Basic }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://webservices.template.soap.com", name = "Account")
-    public JAXBElement<Account> createAccount(Account value) {
-        return new JAXBElement<Account>(_Account_QNAME, Account.class, null, value);
+    @XmlElementDecl(namespace = "http://webservices.template.soap.com", name = "Basic")
+    public JAXBElement<Basic> createBasic(Basic value) {
+        return new JAXBElement<Basic>(_Basic_QNAME, Basic.class, null, value);
     }
 
 }

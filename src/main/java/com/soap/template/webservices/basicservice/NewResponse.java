@@ -2,18 +2,18 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.7 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2015.12.09 às 02:27:51 AM BRST 
+// Gerado em: 2015.12.12 às 06:33:26 PM BRST 
 //
 
 
-package com.soap.template.webservices.accountservice;
+package com.soap.template.webservices.basicservice;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
-import com.soap.template.webservices.Account;
+import com.soap.template.webservices.Basic;
 
 
 /**
@@ -26,7 +26,7 @@ import com.soap.template.webservices.Account;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="AccountDetails" type="{http://webservices.template.soap.com}Account"/>
+ *         &lt;element name="Basic" type="{http://webservices.template.soap.com}Basic"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -37,36 +37,36 @@ import com.soap.template.webservices.Account;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "accountDetails"
+    "basic"
 })
-@XmlRootElement(name = "AccountDetailsResponse")
-public class AccountDetailsResponse {
+@XmlRootElement(name = "NewResponse")
+public class NewResponse {
 
-    @XmlElement(name = "AccountDetails", required = true)
-    protected Account accountDetails;
+    @XmlElement(name = "Basic", required = true)
+    protected Basic basic;
 
     /**
-     * Obtém o valor da propriedade accountDetails.
+     * Obtém o valor da propriedade basic.
      * 
      * @return
      *     possible object is
-     *     {@link Account }
+     *     {@link Basic }
      *     
      */
-    public Account getAccountDetails() {
-        return accountDetails;
+    public Basic getBasic() {
+        return basic;
     }
 
     /**
-     * Define o valor da propriedade accountDetails.
+     * Define o valor da propriedade basic.
      * 
      * @param value
      *     allowed object is
-     *     {@link Account }
+     *     {@link Basic }
      *     
      */
-    public void setAccountDetails(Account value) {
-        this.accountDetails = value;
+    public void setBasic(Basic value) {
+        this.basic = value;
     }
 
 }

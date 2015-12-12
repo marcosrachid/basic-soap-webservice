@@ -2,11 +2,11 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.7 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2015.12.09 às 02:27:51 AM BRST 
+// Gerado em: 2015.12.12 às 06:33:26 PM BRST 
 //
 
 
-package com.soap.template.webservices.accountservice;
+package com.soap.template.webservices.basicservice;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="accountNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="content" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "accountNumber"
+    "content"
 })
-@XmlRootElement(name = "AccountDetailsRequest")
-public class AccountDetailsRequest {
+@XmlRootElement(name = "NewRequest")
+public class NewRequest {
 
     @XmlElement(required = true)
-    protected String accountNumber;
+    protected String content;
 
     /**
-     * Obtém o valor da propriedade accountNumber.
+     * Obtém o valor da propriedade content.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getAccountNumber() {
-        return accountNumber;
+    public String getContent() {
+        return content;
     }
 
     /**
-     * Define o valor da propriedade accountNumber.
+     * Define o valor da propriedade content.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setAccountNumber(String value) {
-        this.accountNumber = value;
+    public void setContent(String value) {
+        this.content = value;
     }
 
 }
