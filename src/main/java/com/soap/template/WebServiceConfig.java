@@ -2,7 +2,6 @@ package com.soap.template;
 
 import java.util.List;
 
-import org.apache.cxf.transport.servlet.CXFServlet;
 import org.springframework.boot.context.embedded.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -33,13 +32,6 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 		registration.setLoadOnStartup(1);
 		return registration;
 	}
-	
-//	@Bean
-//    public ServletRegistrationBean cxfServlet() {
-//        ServletRegistrationBean registration = new ServletRegistrationBean(new CXFServlet(), "classpath:cxf.xml");
-//        registration.setLoadOnStartup(1);
-//        return registration;
-//    }
 
 	@Bean(name = "BasicDetailsService")
 	public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema schemas) {

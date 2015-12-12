@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.7 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2015.12.12 às 06:33:26 PM BRST 
+// Gerado em: 2015.12.12 às 06:59:58 PM BRST 
 //
 
 
@@ -31,6 +31,7 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _NewResponse_QNAME = new QName("http://com/soap/template/webservices/basicservice", "NewResponse");
     private final static QName _EchoRequest_QNAME = new QName("http://com/soap/template/webservices/basicservice", "EchoRequest");
     private final static QName _EchoResponse_QNAME = new QName("http://com/soap/template/webservices/basicservice", "EchoResponse");
 
@@ -42,19 +43,20 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link NewResponse }
-     * 
-     */
-    public NewResponse createNewResponse() {
-        return new NewResponse();
-    }
-
-    /**
      * Create an instance of {@link NewRequest }
      * 
      */
     public NewRequest createNewRequest() {
         return new NewRequest();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://com/soap/template/webservices/basicservice", name = "NewResponse")
+    public JAXBElement<String> createNewResponse(String value) {
+        return new JAXBElement<String>(_NewResponse_QNAME, String.class, null, value);
     }
 
     /**

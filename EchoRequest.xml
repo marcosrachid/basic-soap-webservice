@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gs="http://com/soap/template/webservices/basicservice">
+	<soapenv:Header />
+	<soapenv:Body>
+		<gs:EchoRequest>Echo Request Test!</gs:EchoRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

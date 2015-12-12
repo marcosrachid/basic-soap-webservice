@@ -18,11 +18,11 @@ public class BasicServiceImpl implements BasicService
 	}
 
 	@Override
-	public Basic newBasic(String content) {
+	public String newBasic(JAXBElement<String> content) {
 		
 		Basic basic = new Basic();
 		basic.setId(BigInteger.valueOf((long)(Math.random() * 1000)));
-		basic.setContent(content);
-		return basic;
+		basic.setContent(content.getValue());
+		return "Successfully inserted.";
 	}  
 }  

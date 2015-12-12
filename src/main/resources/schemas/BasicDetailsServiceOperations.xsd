@@ -9,24 +9,19 @@
 	<xsd:element name="NewRequest">
 		<xsd:complexType>
 			<xsd:sequence>
-				<xsd:element name="content" type="xsd:string" />
+				<xsd:element name="content" nillable="false">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:minLength value="1"/>
+							<xsd:maxLength value="20" />
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>
-	<xsd:element name="NewResponse">
-		<xsd:complexType>
-			<xsd:sequence>
-				<xsd:element name="Basic" type="bs:Basic" />
-			</xsd:sequence>
-		</xsd:complexType>
-	</xsd:element>
-
-	<xsd:element name="EchoRequest">
-        <xsd:simpleType>
-            <xsd:restriction base="xsd:string">
-                <xsd:pattern value="([A-Z]|[a-z])+"/>
-            </xsd:restriction>
-        </xsd:simpleType>
-    </xsd:element>
+	<xsd:element name="NewResponse" type="xsd:string" />
+	
+	<xsd:element name="EchoRequest" type="xsd:string" />
 	<xsd:element name="EchoResponse" type="xsd:string" />
 </xsd:schema>  

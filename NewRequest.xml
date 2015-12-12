@@ -2,6 +2,8 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gs="http://com/soap/template/webservices/basicservice">
 	<soapenv:Header />
 	<soapenv:Body>
-		<gs:EchoRequest>ionadsfouiafnds</gs:EchoRequest>
+		<gs:NewRequest>
+			<gs:content>New Basic Request!</gs:content>
+		</gs:NewRequest>
 	</soapenv:Body>
 </soapenv:Envelope>
